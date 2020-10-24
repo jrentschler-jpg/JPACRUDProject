@@ -48,6 +48,21 @@ public class WineController {
 		return mv;
 		
 	}
+	@RequestMapping(path="deletedWine.do", method = RequestMethod.GET)
+	public ModelAndView showDeletedWine(Integer id) {
+		wineDao.deleteWine(id);
+		ModelAndView mv = new ModelAndView();
+//		ra.addFlashAttribute("wine", deleteThisWine);
+		mv.setViewName("index");
+		return mv;
+	}
+//	@RequestMapping(path="thisWineIsDeleted.do", method = RequestMethod.POST) 
+//	public ModelAndView deleted() {
+//		ModelAndView mv = new ModelAndView();
+//		mv.setViewName("index");
+//		return mv;
+//		
+//	}
 	@RequestMapping(path = "index.do")
 	public String backHome() {
 		return "index";

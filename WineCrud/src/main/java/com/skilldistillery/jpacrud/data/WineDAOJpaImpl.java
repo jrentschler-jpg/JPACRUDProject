@@ -50,9 +50,21 @@ public class WineDAOJpaImpl implements WineDAO {
 	}
 
 	@Override
-	public boolean deleteWine(int wineId) {
-		// TODO Auto-generated method stub
-		return false;
+	public void deleteWine(int id) {
+//		Wine badWine = em.find(Wine.class, id);
+		String jpql = "DELETE FROM Wine w WHERE w.id = :id";
+		id = em.createQuery(jpql)
+				.setParameter("id", id)
+				.executeUpdate();
+		
+//		em.remove(badWine);
+//		boolean badWineDeleted = ! em.contains(badWine);
+		
+		em.flush();
+		
+		em.close();
+//		return badWineDeleted;
+//		return badWine;
 	}
 
 	@Override

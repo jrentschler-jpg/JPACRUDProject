@@ -15,6 +15,7 @@
 	<div class="container-fluid">
 <h4>Wine Selected:</h4>
 	<h5>Label Name: ${wine.labelName}(${wine.yearProduced})</h5>
+		<p>${wine.id}</p>
 		<p>${wine.type}</p>
 		<p>${wine.flavor}</p>
 		<p>${wine.description}</p>

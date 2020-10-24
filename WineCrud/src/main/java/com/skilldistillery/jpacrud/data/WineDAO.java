@@ -13,6 +13,6 @@ public interface WineDAO {
 	
 	public Wine createWine(Wine wine);
 	public Wine updateWine(Wine wine);
-	public boolean deleteWine(int id);
+	public void deleteWine(int id);
 
 }
