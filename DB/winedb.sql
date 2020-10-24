@@ -26,8 +26,8 @@ CREATE TABLE IF NOT EXISTS `wine` (
   `type` VARCHAR(50) NOT NULL,
   `flavor` VARCHAR(200) NULL,
   `description` VARCHAR(1500) NULL,
-  `rating` DOUBLE NOT NULL,
-  `cost` DECIMAL(7,2) NOT NULL,
+  `rating` DOUBLE NULL,
+  `cost` DECIMAL(7,2) NULL,
   `vineyard` VARCHAR(200) NULL,
   `year_produced` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))

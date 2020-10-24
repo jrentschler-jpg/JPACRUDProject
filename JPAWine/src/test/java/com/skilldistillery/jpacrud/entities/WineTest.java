@@ -48,6 +48,10 @@ class WineTest {
 	void test1() {
 		assertNotNull(wine);
 		assertEquals("Palo61", wine.getLabelName());
+		assertEquals("Chardonnay", wine.getType());
+		assertEquals(3.5, wine.getRating());
+		assertEquals(25.00, wine.getCost());
+		assertEquals("2019", wine.getYearProduced());
 		
 	}
 
