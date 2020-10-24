@@ -45,7 +45,7 @@ public class WineDAOJpaImpl implements WineDAO {
 	public Wine createWine(Wine wine) {
 		em.persist(wine);
 		em.flush();
-		em.close();
+//		em.close();
 		return wine;
 	}
 
@@ -62,15 +62,27 @@ public class WineDAOJpaImpl implements WineDAO {
 		
 		em.flush();
 		
-		em.close();
+//		em.close();
 //		return badWineDeleted;
 //		return badWine;
 	}
 
 	@Override
-	public Wine updateWine(Wine wine) {
-		// TODO Auto-generated method stub
-		return null;
+	public Wine updateWine(int id, Wine wine) {
+	
+		Wine updateWine = em.find(Wine.class, id);
+		updateWine.setLabelName(wine.getLabelName());
+		updateWine.setCost(wine.getCost());
+		updateWine.setDescription(wine.getDescription());
+		
+//		String jpql = "UPDATE w FROM Wine w WHERE w.id = :id";
+//		wine = em.createQuery(jpql)
+//				.setParameter("id", id)
+//				.executeUpdate();
+		em.flush();
+//		em.close();
+		
+		return wine;
 	}
 
 }

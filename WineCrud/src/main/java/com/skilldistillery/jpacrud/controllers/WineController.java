@@ -56,6 +56,28 @@ public class WineController {
 		mv.setViewName("index");
 		return mv;
 	}
+	
+	@RequestMapping(path="updatedWine.do", method = RequestMethod.POST)
+	public ModelAndView createUpdatedWine(Integer id, Wine wine) {
+//		Wine updateThisWine = wineDao.updateWine(id, wine);
+		System.out.println("This is the post controller part.");
+		ModelAndView mv = new ModelAndView();
+		Wine updatedWine = wineDao.findWineById(id);
+//		wineDao.updateWine(id, wine);
+		mv.addObject("wine", updatedWine);
+//		ra.addFlashAttribute("update wine", updateThisWine);
+		mv.setViewName("redirect:updateThisWineNow.do");
+		return mv;
+	}
+	@RequestMapping(path="updateThisWineNow.do", method = RequestMethod.GET) 
+	public ModelAndView update(Integer id) {
+		System.out.println("This is the redirect controller.");
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("wine", wineDao.findWineById(id));
+		mv.setViewName("updateWine");
+		return mv;
+		
+	}
 //	@RequestMapping(path="thisWineIsDeleted.do", method = RequestMethod.POST) 
 //	public ModelAndView deleted() {
 //		ModelAndView mv = new ModelAndView();

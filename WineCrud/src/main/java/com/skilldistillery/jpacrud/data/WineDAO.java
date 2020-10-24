@@ -12,7 +12,7 @@ public interface WineDAO {
 	
 	
 	public Wine createWine(Wine wine);
-	public Wine updateWine(Wine wine);
+	public Wine updateWine(int id, Wine wine);
 	public void deleteWine(int id);
 
 }

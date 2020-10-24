@@ -25,6 +25,18 @@
 	</div>
 	
 	<p>
+	
+	<form action="updateThisWineNow.do" method="POST">
+Wine ID: <input type="text" name="id" /> <input type="submit"
+	value="Update Wine" />
+</form>
+	
+	
+	</p>
+	
+	
+	
+	<p>
 		<a href="index.do" class="btn btn-secondary" role="button">Back
 			to Home</a>
 	</p>

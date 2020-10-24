@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,23 +9,13 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
-<title>Wine List</title>
+<title>Update Wine</title>
 </head>
 <body>
-
 <div class="container-fluid">
+<h2>Update Selected Wine:</h2>
 
-<h1>Welcome to the Wine Directory!</h1>
-
-<h3>Search by Wine Id</h3>
-<form action="getWine.do" method="GET">
-Wine ID: <input type="text" name="wid" /> <input type="submit"
-	value="Show Wine" />
-</form>
-
-<h4>Create New Wine</h4>
-
-<form action="createWine.do" method="POST">
+<form action="updatedWine.do" method="GET">
 <label for="labelName">Label Name: </label>
 <input type="text" name="labelName">
 <br>
@@ -54,19 +44,9 @@ Wine ID: <input type="text" name="wid" /> <input type="submit"
  <input type="submit">
 </form>
 
-<h4>Delete Wine</h4>
 
-<form action="deletedWine.do" method="GET">
-Wine ID: <input type="text" name="id" /> <input type="submit"
-	value="Delete Wine" />
-</form>
 
-<!-- <h4>Update Wine</h4>
 
-<form action="updatedWine.do" method="POST">
-Wine ID: <input type="text" name="id" /> <input type="submit"
-	value="Update Wine" />
-</form> -->
 
 
 
