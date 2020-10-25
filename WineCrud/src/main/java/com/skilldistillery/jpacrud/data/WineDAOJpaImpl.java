@@ -24,9 +24,9 @@ public class WineDAOJpaImpl implements WineDAO {
 
 	@Override
 	public List<Wine> findAllWine() {
-		return null;
-		// TODO Auto-generated method stub
+		String jpql = "SELECT w FROM Wine w";
 		
+		return em.createQuery(jpql, Wine.class).getResultList();
 	}
 
 //	@Override

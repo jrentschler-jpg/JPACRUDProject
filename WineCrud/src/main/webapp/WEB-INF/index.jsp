@@ -68,7 +68,7 @@ Wine ID: <input type="text" name="id" /> <input type="submit"
 	value="Update Wine" />
 </form>  -->
 
-
+<a href="wineList.do">List of Wines</a>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
