@@ -91,6 +91,12 @@ public class WineController {
 		model.addAttribute("wine", listOfWines);
 		return "listOfWines";
 	}
+	@RequestMapping(path="findWineName.do", method = RequestMethod.GET)
+	public String findWineNames(String labelName, Model model) {
+		List<Wine> findWinesByName = wineDao.findWineByName(labelName);
+		model.addAttribute("wine", findWinesByName);
+		return "listOfWines";
+	}
 
 	@RequestMapping(path = "index.do")
 	public String backHome() {

@@ -54,5 +54,14 @@ class WineTest {
 		assertEquals("2019", wine.getYearProduced());
 		
 	}
+	@Test
+	@DisplayName("testing findWineById()")
+	void test2() {
+		int id = wine.getId();
+		assertNotNull(id);
+//		assertEquals("");
+		
+		//delete();
+	}
 
 }

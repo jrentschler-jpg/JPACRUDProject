@@ -29,16 +29,16 @@ public class WineDAOJpaImpl implements WineDAO {
 		return em.createQuery(jpql, Wine.class).getResultList();
 	}
 
-//	@Override
-//	public void printIndividualWine(Wine wine) {
-//		// TODO Auto-generated method stub
-//		
-//	}
 
+
+	
 	@Override
-	public List<Wine> findWineFromSearch(String userSearch) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Wine> findWineByName(String labelName) {
+		String jpql = "SELECT w FROM Wine w WHERE w.labelName = :labelName";
+		
+		return em.createQuery(jpql, Wine.class)
+				.setParameter("labelName", labelName)
+				.getResultList();
 	}
 
 	@Override

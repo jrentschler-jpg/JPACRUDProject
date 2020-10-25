@@ -55,7 +55,7 @@
 		<br />
 		<hr>
 		<p>
-		<a href="updateThisWineNow.do">Update Wine</a>
+		<!-- <a href="updateThisWineNow.do">Update Wine</a> -->
 		<form action="updateThisWineNow.do" method="POST">
 			Wine ID: <input type="text" name="id" /> <input type="submit"
 				value="Update Wine" />

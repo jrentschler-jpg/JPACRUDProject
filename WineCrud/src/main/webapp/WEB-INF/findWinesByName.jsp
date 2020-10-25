@@ -9,17 +9,17 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
-<title>List Of Wines</title>
+<title>Fine Wines By Name</title>
 </head>
 <body>
-<h1>List of Wines:</h1>
+<h1>Searched Wines By Name:</h1>
 <div class="container-fluid">
 <table class="table table-striped table-hover">
 
 <c:forEach items="${wine }" var="wines">
 <tr>
 <td>${wines.id }</td>
-<td><a href="getWine.do?wid=${wines.id }">${wines.labelName }</a></td>
+<td><a href="findWineByName.do?labelName=${wines.labelName }">${wines.labelName }</a></td>
 </tr>
 </c:forEach>
 </table>
