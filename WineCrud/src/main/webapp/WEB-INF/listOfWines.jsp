@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,23 +10,30 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
+	
 <title>List Of Wines</title>
+
 </head>
+
 <body style="background-color:SeaShell;">
-<h1 style="color:purple;">List of Wines: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
-<div class="container-fluid">
-<table class="table table-striped table-hover">
+	<h1 style="color:purple;">List of Wines: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
+		<div class="container-fluid">
+		<table class="table table-striped table-hover">
 
-<c:forEach items="${wine }" var="wines">
-<tr>
-<td>${wines.id }</td>
-<td><a href="getWine.do?wid=${wines.id }">${wines.labelName }</a></td>
-</tr>
-</c:forEach>
-</table>
+			<c:forEach items="${wine }" var="wines">
+				<tr>
+					<td>${wines.id }</td>
+					<td><a href="getWine.do?wid=${wines.id }">${wines.labelName }</a></td>
+				</tr>
+			</c:forEach>
+		</table>
 
-	<p>
+<!-- 	<p>
 			<a href="index.do" class="btn btn-secondary" role="button">Back
+				to Home</a>
+		</p> -->
+	<p>
+			<a href="index.do" class="btn btn-outline-primary" role="button">Back
 				to Home</a>
 		</p>
 

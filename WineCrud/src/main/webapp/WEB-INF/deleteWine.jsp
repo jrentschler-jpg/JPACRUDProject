@@ -24,7 +24,7 @@
 
 
 <p>
-		<a href="index.do" class="btn btn-secondary" role="button">Back
+		<a href="index.do" class="btn btn-primary" role="button">Back
 			to Home</a>
 	</p>
 </div>

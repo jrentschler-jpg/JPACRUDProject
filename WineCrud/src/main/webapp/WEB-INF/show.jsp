@@ -64,15 +64,15 @@
 		<p>
 		<!-- <a href="updateThisWineNow.do">Update Wine</a> -->
 		<form action="updateThisWineNow.do" method="POST">
-			Wine ID: <input type="text" name="id" /> <input type="submit"
-				value="Update Wine" />
+			Wine ID: <input type="text" name="id" /> 
+			<input type="submit" class="btn btn-outline-success" value="Update Wine" />
 		</form>
 		</p>
 		<p>
 		<form action="deletedWine.do" method="GET">
-Wine ID: <input type="text" name="id" /> <input type="submit"
-	value="Delete Wine" />
-</form>
+		Wine ID: <input type="text" name="id" /> 
+		<input type="submit" class="btn btn-outline-danger" value="Delete Wine"/>
+		</form>
 </p>
 
 </c:if> 
@@ -83,7 +83,7 @@ Wine ID: <input type="text" name="id" /> <input type="submit"
 		</p>
 		<br>
 		<p>
-			<a href="index.do" class="btn btn-secondary" role="button">Back
+			<a href="index.do" class="btn btn-primary" role="button">Back
 				to Home</a>
 		</p>
 		<br>

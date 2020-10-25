@@ -10,11 +10,11 @@
 	crossorigin="anonymous">
 <title>Updated Wine</title>
 </head>
-<body>
+<body style="background-color:Snow;">
 
 	<div class="container-fluid">
-		<h1>Updated Wine: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
-		<h2>Label Name: ${wine.labelName}</h2>
+		<h1 style="color:DarkRed;">Updated Wine <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
+		<h2 style="color:purple;">Label Name: ${wine.labelName}</h2>
 		<table class="table table-striped table-hover">
 			
 			<tr>
@@ -55,22 +55,24 @@
 		<br />
 		<hr>
 		
-		<input type="submit" />
+		<input type="submit" style="color:DarkRed;" />
 		<p>
 		<form action="updateThisWineNow.do" method="POST">
-			Wine ID: <input type="text" name="id" /> <input type="submit"
-				value="Update Wine" />
+			Wine ID: <input type="text" name="id" /> 
+			<input type="submit"
+			class="btn btn-outline-success" value="Update Wine" />
 		</form>
 		</p>
 		<p>
 		<form action="deletedWine.do" method="GET">
-Wine ID: <input type="text" name="id" /> <input type="submit"
-	value="Delete Wine" />
-</form>
+			Wine ID: <input type="text" name="id" /> 
+		<input type="submit"
+		class="btn btn-outline-danger" value="Delete Wine"/>
+		</form>
 </p>
 		<br> <br>
 		<p>
-			<a href="index.do" class="btn btn-secondary" role="button">Back
+			<a href="index.do" class="btn btn-primary" role="button">Back
 				to Home</a>
 		</p>
 	</div>
