@@ -11,8 +11,8 @@
 	crossorigin="anonymous">
 <title>List Of Wines</title>
 </head>
-<body>
-<h1>List of Wines:</h1>
+<body style="background-color:SeaShell;">
+<h1 style="color:purple;">List of Wines:</h1>
 <div class="container-fluid">
 <table class="table table-striped table-hover">
 

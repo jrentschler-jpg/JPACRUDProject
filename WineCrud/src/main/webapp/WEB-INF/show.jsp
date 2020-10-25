@@ -11,14 +11,14 @@
 	crossorigin="anonymous">
 <title>Show Wine</title>
 </head>
-<body>
+<body style="background-color:FloralWhite;">
 
 	<div class="container-fluid">
-		<h1>Wine Selected</h1>
+		<h1 style="color:DarkRed;">Wine Selected</h1>
 		<c:out value="${id }"/>
 		<c:if test="${empty wine}">No wine found</c:if>
 		<c:if test="${! empty wine}">
-		<h2>Label Name: ${wine.labelName}</h2>
+		<h2 style="color:purple;">Label Name: ${wine.labelName}</h2>
 		
 		
 		<table class="table table-striped table-hover">

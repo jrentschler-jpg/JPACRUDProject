@@ -11,20 +11,20 @@
 	crossorigin="anonymous">
 <title>Wine List</title>
 </head>
-<body>
+<body style="background-color:Cornsilk;">
 
 <div class="container-fluid">
 
-<h1>Welcome to the Wine Directory!</h1>
+<h1 style="color:purple;">Welcome to the Wine Directory!</h1>
 <hr>
-<h3>Search by Wine Id</h3>
+<h3 style="color:DarkRed;">Search by Wine Id</h3>
 <form action="getWine.do" method="GET">
 Wine ID: <input type="text" name="wid" /> <input type="submit"
 	value="Show Wine" />
 </form>
 <br>
 <hr>
-<h4>Create New Wine</h4>
+<h4 style="color:DarkRed;">Create New Wine</h4>
 
 <form action="createWine.do" method="POST">
 <label for="labelName">Label Name: </label>
@@ -80,13 +80,13 @@ Wine ID: <input type="text" name="id" /> <input type="submit"
 Wine ID: <input type="text" name="id" /> <input type="submit"
 	value="Update Wine" />
 </form>  -->
-<h3>Search by Wine Name</h3>
+<h3 style="color:DarkRed;">Search by Wine Name</h3>
 <form action="findWineName.do" method="GET">
 Wine Name: <input type="text" name="labelName" /> <input type="submit"
 	value="Wine Name" />
 </form>
 <br>
-<a href="wineList.do">List of Wines</a>
+<a style="color:purple;" href="wineList.do">List of Wines</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

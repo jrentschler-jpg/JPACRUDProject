@@ -11,10 +11,10 @@
 	crossorigin="anonymous">
 <title>Deleted Wine</title>
 </head>
-<body>
+<body style="background-color:Snow;">
 <div class="container-fluid">
-<h1>This wine has been deleted! </h1>
-<h1>Please click on the Back to Home Button </h1>
+<h1 style="color:purple;">This wine has been deleted! </h1>
+<h1 style="color:DarkRed;">Please click on the Back to Home Button </h1>
 
 
 

@@ -11,9 +11,9 @@
 	crossorigin="anonymous">
 <title>Update Wine</title>
 </head>
-<body>
+<body style="background-color:Snow;">
 	<div class="container-fluid">
-		<h2>Update Selected Wine:</h2>
+		<h2 style="color:DarkRed;">Update Selected Wine:</h2>
 
 		<form action="Update.do" method="POST">
 		<input type="hidden" name="id" value="${wine.id }"><br>
