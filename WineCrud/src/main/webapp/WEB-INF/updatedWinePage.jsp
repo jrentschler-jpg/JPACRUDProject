@@ -13,7 +13,7 @@
 <body>
 
 	<div class="container-fluid">
-		<h1>Updated Wine</h1>
+		<h1>Updated Wine: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 		<h2>Label Name: ${wine.labelName}</h2>
 		<table class="table table-striped table-hover">
 			

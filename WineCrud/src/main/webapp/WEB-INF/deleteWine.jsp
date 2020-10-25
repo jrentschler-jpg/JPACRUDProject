@@ -15,6 +15,10 @@
 <div class="container-fluid">
 <h1 style="color:purple;">This wine has been deleted! </h1>
 <h1 style="color:DarkRed;">Please click on the Back to Home Button </h1>
+<br>
+<p>
+<img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;">
+</p>
 
 
 

@@ -12,7 +12,7 @@
 <title>Fine Wines By Name</title>
 </head>
 <body>
-<h1>Searched Wines By Name:</h1>
+<h1>Searched Wines By Name: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 <div class="container-fluid">
 <table class="table table-striped table-hover">
 

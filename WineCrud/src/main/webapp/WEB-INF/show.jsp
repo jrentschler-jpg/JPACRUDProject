@@ -14,7 +14,7 @@
 <body style="background-color:FloralWhite;">
 
 	<div class="container-fluid">
-		<h1 style="color:DarkRed;">Wine Selected</h1>
+		<h1 style="color:DarkRed;">Wine Selected <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 		<c:out value="${id }"/>
 		<c:if test="${empty wine}">No wine found</c:if>
 		<c:if test="${! empty wine}">

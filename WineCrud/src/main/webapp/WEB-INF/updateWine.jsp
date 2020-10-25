@@ -13,7 +13,7 @@
 </head>
 <body style="background-color:Snow;">
 	<div class="container-fluid">
-		<h2 style="color:DarkRed;">Update Selected Wine:</h2>
+		<h2 style="color:DarkRed;">Update Selected Wine: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h2>
 
 		<form action="Update.do" method="POST">
 		<input type="hidden" name="id" value="${wine.id }"><br>

@@ -15,7 +15,8 @@
 
 <div class="container-fluid">
 
-<h1 style="color:purple;">Welcome to the Wine Directory!</h1>
+<h1 style="color:purple;">Welcome to the Wine Directory!
+<img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 <hr>
 <h3 style="color:DarkRed;">Search by Wine Id</h3>
 <form action="getWine.do" method="GET">

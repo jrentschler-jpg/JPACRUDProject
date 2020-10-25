@@ -12,7 +12,7 @@
 <title>List Of Wines</title>
 </head>
 <body style="background-color:SeaShell;">
-<h1 style="color:purple;">List of Wines:</h1>
+<h1 style="color:purple;">List of Wines: <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 <div class="container-fluid">
 <table class="table table-striped table-hover">
 
