@@ -23,7 +23,9 @@
 			<c:forEach items="${wine }" var="wines">
 				<tr>
 					<td>${wines.id }</td>
-					<td><a href="getWine.do?wid=${wines.id }">${wines.labelName }</a></td>
+					<td><a href="getWine.do?wid=${wines.id }">${wines.labelName }</a></td> 
+					<%-- <td><a href="getWine.do?wid=1">${wines.labelName } <img src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/e35/119652575_3802734493326071_8782000831760004852_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=j-j7bd2SmwoAX_VtBzz&_nc_tp=18&oh=9b8913a718f88dca9d975a42f157c796&oe=5FC08422" alt="palo 61 wine" style="width:100px;height:100px"></a></td> --%>
+					
 				</tr>
 			</c:forEach>
 		</table>
@@ -32,6 +34,8 @@
 			<a href="index.do" class="btn btn-secondary" role="button">Back
 				to Home</a>
 		</p> -->
+		<hr>
+		<br>
 	<p>
 			<a href="index.do" class="btn btn-outline-primary" role="button">Back
 				to Home</a>
