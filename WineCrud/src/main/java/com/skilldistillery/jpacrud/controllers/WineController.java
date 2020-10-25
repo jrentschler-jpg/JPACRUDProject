@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -63,18 +64,28 @@ public class WineController {
 		System.out.println("This is the post controller part.");
 		ModelAndView mv = new ModelAndView();
 		Wine updatedWine = wineDao.findWineById(id);
+//		Wine updatedWine = wineDao.updateWine(id, wine);
 //		wineDao.updateWine(id, wine);
 		mv.addObject("wine", updatedWine);
 //		ra.addFlashAttribute("update wine", updateThisWine);
 		mv.setViewName("redirect:updateThisWineNow.do");
 		return mv;
 	}
-	@RequestMapping(path="updateThisWineNow.do", method = RequestMethod.GET) 
+	@RequestMapping(path="updateThisWineNow.do", method = RequestMethod.POST) 
 	public ModelAndView update(Integer id) {
 		System.out.println("This is the redirect controller.");
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("wine", wineDao.findWineById(id));
 		mv.setViewName("updateWine");
+		return mv;
+		
+	}
+	@RequestMapping(path="Update.do", method = RequestMethod.POST) 
+	public ModelAndView updateConfirmation(Integer id) {
+//		System.out.println("This is the redirect to the confirmation controller.");
+		ModelAndView mv = new ModelAndView();
+//		mv.addObject("wine", wineDao.findWineById(id));
+		mv.setViewName("show");
 		return mv;
 		
 	}

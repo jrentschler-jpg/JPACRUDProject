@@ -15,7 +15,7 @@
 <div class="container-fluid">
 <h2>Update Selected Wine:</h2>
 
-<form action="updatedWine.do" method="GET">
+<form action="Update.do" method="POST">
 <label for="labelName">Label Name: </label>
 <input type="text" name="labelName">
 <br>
@@ -41,9 +41,11 @@
 <input type="text" name="yearProduced">
 <br>
 
- <input type="submit">
+ <input type="submit" />
 </form>
 
+<form action="Update.do" method="POST">
+</form> 
 
 
 

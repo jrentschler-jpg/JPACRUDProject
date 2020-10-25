@@ -61,12 +61,12 @@ Wine ID: <input type="text" name="id" /> <input type="submit"
 	value="Delete Wine" />
 </form>
 
-<!-- <h4>Update Wine</h4>
+ <h4>Update Wine</h4>
 
-<form action="updatedWine.do" method="POST">
+<!-- <form action="updatedWine.do" method="POST">
 Wine ID: <input type="text" name="id" /> <input type="submit"
 	value="Update Wine" />
-</form> -->
+</form>  -->
 
 
 
