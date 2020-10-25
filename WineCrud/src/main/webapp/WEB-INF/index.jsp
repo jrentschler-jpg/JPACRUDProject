@@ -30,8 +30,20 @@ Wine ID: <input type="text" name="wid" /> <input type="submit"
 <label for="labelName">Label Name: </label>
 <input type="text" name="labelName">
 <br>
-<label for="type">Type: </label>
+<!-- <label for="type">Type: </label>
 <input type="text" name="type">
+<br> -->
+<label for="type">Type:</label>
+<select name="type" id="type">
+<option value="Pinot Noir">Pinot Noir</option>
+<option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+<option value="Merlot">Merlot</option>
+<option value="Pinot Grigio">Pinot Grigio</option>
+<option value="Chardonnay">Chardonnay</option>
+<option value="Sauvignon Blanc">Sauvignon Blanc</option>
+<option value="Champagne">Champagne</option>
+
+</select>
 <br>
 <label for="flavor">Flavor: </label>
 <input type="text" name="flavor">

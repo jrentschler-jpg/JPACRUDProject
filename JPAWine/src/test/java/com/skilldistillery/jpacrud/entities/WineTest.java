@@ -49,8 +49,11 @@ class WineTest {
 		assertNotNull(wine);
 		assertEquals("Palo61", wine.getLabelName());
 		assertEquals("Chardonnay", wine.getType());
+		assertEquals("semi-dry", wine.getFlavor());
+		assertEquals("A delicate, fresh wine with balsalmic and floral notes.", wine.getDescription());
 		assertEquals(3.5, wine.getRating());
 		assertEquals(25.00, wine.getCost());
+		assertEquals("Secco, Tenuta Di Burchino, Pisa hills, Tuscany", wine.getVineyard());
 		assertEquals("2019", wine.getYearProduced());
 		
 	}

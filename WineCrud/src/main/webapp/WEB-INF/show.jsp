@@ -77,10 +77,18 @@ Wine ID: <input type="text" name="id" /> <input type="submit"
 
 </c:if> 
 		<br> <br>
+			<p>
+			<a href="wineList.do" class="btn btn-secondary" role="button">Back
+				to Wine List</a>
+		</p>
+		<br>
 		<p>
 			<a href="index.do" class="btn btn-secondary" role="button">Back
 				to Home</a>
 		</p>
+		<br>
+		
+		
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
