@@ -13,6 +13,8 @@
 </head>
 <body>
 <div class="container-fluid">
+<h1>This wine has been deleted! </h1>
+<h1>Please click on the Back to Home Button </h1>
 
 
 

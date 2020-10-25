@@ -8,12 +8,12 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
-<title>Show Wine</title>
+<title>Updated Wine</title>
 </head>
 <body>
 
 	<div class="container-fluid">
-		<h1>Wine Selected</h1>
+		<h1>Updated Wine</h1>
 		<h2>Label Name: ${wine.labelName}</h2>
 		<table class="table table-striped table-hover">
 			
@@ -54,8 +54,9 @@
 		</table>
 		<br />
 		<hr>
+		
+		<input type="submit" />
 		<p>
-		<a href="updateThisWineNow.do">Update Wine</a>
 		<form action="updateThisWineNow.do" method="POST">
 			Wine ID: <input type="text" name="id" /> <input type="submit"
 				value="Update Wine" />

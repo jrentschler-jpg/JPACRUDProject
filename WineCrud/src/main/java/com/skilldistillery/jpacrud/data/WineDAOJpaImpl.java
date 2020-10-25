@@ -68,17 +68,21 @@ public class WineDAOJpaImpl implements WineDAO {
 	}
 
 	@Override
-	public Wine updateWine(int id, Wine wine) {
+	public Wine updateWine(Wine wine) {
 	
-		Wine updateWine = em.find(Wine.class, id);
-		updateWine.setLabelName(wine.getLabelName());
-		updateWine.setCost(wine.getCost());
-		updateWine.setDescription(wine.getDescription());
-		
 //		String jpql = "UPDATE w FROM Wine w WHERE w.id = :id";
-//		wine = em.createQuery(jpql)
-//				.setParameter("id", id)
+//		int  updates = em.createQuery(jpql, Wine.class)
+//				.setParameter("id", wine.getId())
 //				.executeUpdate();
+		Wine updateWine = em.find(Wine.class, wine.getId());
+		updateWine.setLabelName(wine.getLabelName());
+		updateWine.setType(wine.getType());
+		updateWine.setDescription(wine.getDescription());
+		updateWine.setRating(wine.getRating());
+		updateWine.setCost(wine.getCost());
+		updateWine.setVineyard(wine.getVineyard());
+		updateWine.setYearProduced(wine.getYearProduced());
+		
 		em.flush();
 //		em.close();
 		

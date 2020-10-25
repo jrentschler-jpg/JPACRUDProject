@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,48 +12,48 @@
 <title>Update Wine</title>
 </head>
 <body>
-<div class="container-fluid">
-<h2>Update Selected Wine:</h2>
+	<div class="container-fluid">
+		<h2>Update Selected Wine:</h2>
 
-<form action="Update.do" method="POST">
-<label for="labelName">Label Name: </label>
-<input type="text" name="labelName">
-<br>
-<label for="type">Type: </label>
-<input type="text" name="type">
-<br>
-<label for="flavor">Flavor: </label>
-<input type="text" name="flavor">
-<br>
-<label for="description">Description: </label>
-<input type="text" name="description">
-<br>
-<label for="rating">Rating: </label>
-<input type="text" name="rating">
-<br>
-<label for="cost">Cost: </label>
-<input type="text" name="cost">
-<br>
-<label for="vineyard">Vineyard: </label>
-<input type="text" name="vineyard">
-<br>
-<label for="yearProduced">Year Produced: </label>
-<input type="text" name="yearProduced">
-<br>
+		<form action="Update.do" method="POST">
+		<input type="hidden" name="id" value="${wine.id }"><br>
+			<label for="id">Wine ID: ${wine.id}</label><br>
+			<label for="labelName">Label Name: </label> 
+			<input type="text" name="labelName" value="${wine.labelName }"> <br> 
+			<label for="type">Type:</label> 
+			<input type="text" name="type" value="${wine.type }"> <br> 
+			<label for="flavor">Flavor: </label> 
+			<input type="text" name="flavor" value="${wine.flavor }"> <br> 
+			<label for="description">Description: </label> 
+			<input type="text" name="description" value="${wine.description }"> <br> 
+			<label for="rating">Rating: </label> 
+			<input type="text" name="rating" value="${wine.rating }"> <br> 
+			<label for="cost">Cost: </label> 
+			<input type="text" name="cost" value="${wine.cost }"> <br> 
+			<label for="vineyard">Vineyard: </label> 
+			<input type="text" name="vineyard" value="${wine.vineyard }"> <br> 
+			<label for="yearProduced">Year Produced: </label> 
+			<input type="text" name="yearProduced" value="${wine.yearProduced }"> <br> 
+			
+			<input type="submit" />
+		</form>
 
- <input type="submit" />
-</form>
+		<form action="Update.do" method="POST"></form>
 
-<form action="Update.do" method="POST">
-</form> 
+		<br> <br>
 
-
+		<p>
+			<a href="index.do" class="btn btn-secondary" role="button">Back
+				to Home</a>
+		</p>
 
 
 
 
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
 	<script
