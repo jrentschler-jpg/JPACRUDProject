@@ -11,7 +11,12 @@
 <title>Updated Wine</title>
 </head>
 <body style="background-color:Snow;">
-
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully updated the wine!</p>
+  <hr>
+  
+</div>
 	<div class="container-fluid">
 		<h1 style="color:DarkRed;">Updated Wine <img src="https://www.iconspng.com/images/summer-wine/summer-wine.jpg" alt="wine picture" style="width:100px;height:100px;"></h1>
 		<h2 style="color:purple;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-display-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

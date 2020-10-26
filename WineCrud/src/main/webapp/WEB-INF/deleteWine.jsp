@@ -12,6 +12,13 @@
 <title>Deleted Wine</title>
 </head>
 <body style="background-color:Snow;">
+
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Wine DELETED!</h4>
+  <p>This wine has been deleted.</p>
+  <hr>
+  
+</div>
 <div class="container-fluid">
 <h1 style="color:purple;">This wine has been deleted! </h1>
 <h1 style="color:DarkRed;">Please click on the Back to Home Button </h1>
